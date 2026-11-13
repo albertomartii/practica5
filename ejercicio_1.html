@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio 1 - 5</title>
+    <script src="js/ejercicio_1.js"></script>
+</head>
+<body>
+    <h1>FORMULARIO</h1>
+    <form>
+        <p>Nombre:</p><input type="text" id="nombre" name="nombre" placeholder="Nombre"><br><br>
+        <p>Apellido:</p><input type="text" id="apellido" name="apellido" placeholder="Apellido"><br><br>
+        <p>Telefono:</p><input type="text" id="telefono" name="telefono" placeholder="Telefono"><br><br>
+        <p>Dni:</p><input type="text" id="dni" name="dni" placeholder="Dni"><br><br>
+        <p>Edad:</p><input type="number" id="edad" name="edad" placeholder="Edad"><br><br>
+        <p>Sexo:</p>
+        <input type="radio" id="masculino" name="sexo" value="masculino">
+        <label for="masculino">Masculino</label>
+        <input type="radio" id="femenino" name="sexo" value="femenino">
+        <label for="femenino">Femenino</label><br><br>
+        <p>Incluir mi foto:</p>
+        
+        <!--2. Incluir mi foto, permitirá cargar una imagen-->
+        <input type="file" id="foto" name="foto"><br><br>
+        <input type="checkbox" id="publicidad" name="publicidad" value="aceptar">
+        <label for="publicidad">Enviar publicidad</label><br><br>
+        
+        <!--3. El campo aficiones será un cuadro de lista que nos permitirá elegir entre los siguientes valores: música, lectura y deporte.-->
+        <p>Elige tu afición favorita:</p>
+        <select id="aficion" name="aficion">
+            <option value="musica">música</option>
+            <option value="lectura">lectura</option>
+            <option value="deporte">deporte</option>
+        </select><br><br>
+        <p>Observaciones:</p>
+        <textarea id="observaciones" name="observaciones" rows="5" cols="30" placeholder="Observaciones"></textarea><br><br>
+        <button type="save">Guardar cambios</button>
+        <button type="reset">Borrar los datos introducidos</button>
+    </form>
+</body>
+</html>
